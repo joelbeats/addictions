@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <meta name="description" content="Welcome to the Addictions Homepage">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="addiction,addictions,drugs,gambling,12,steps,program,12stepprogram">
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+    <script src="messenger.js" defer></script>
+</head>
+<body onload="document.contactForm.email.focus()">
+    
+  <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="102045908368863">
+    </div>
+    
+    <header>
+        <img id="logo" src="/img/logo.png" alt="Addictions logo">
+            <h1 id="heading">Addictions</h1>
+        <nav>
+                <div id="menuToggle">
+                <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                <input type="checkbox" />
+                 <!-- Some spans to act as a hamburger. -->
+                <span></span>
+                <span></span>
+                <span></span>
+              
+                <ul id="menu">
+                    <a href="index.html">
+                    <li>MAIN PAGE</li>
+                    </a>
+                </ul>
+             </div>
+        </nav>
+    </header>
+
+    <div id="content">
+    <section>   
+        <ul id="menu1">
+            <a href="index.html">
+                <li>MAIN PAGE</li>
+            </a>
+        </ul>
+    </section>
+
+    <div id="contact-form">
+        <h2>Contact Us</h2>
+        <p>If you think you have a problem with an addiction.<br>Contact us below:
+        </p>
+        <form name="contactForm" action="contact.php" onsubmit="return validateForm()" method="post">
+
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" placeholder="Your first name.."><br>
+        
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" placeholder="Your last name.."><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Your email.."><br>
+        
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+              <option value="uk">UK</option>
+              <option value="sweden">Sweden</option>
+            </select><br>
+
+            <label for="subject">Message:</label>
+            <textarea name="message" placeholder="Write something.."></textarea><br>  
+            <input type="submit" value="Submit" id="submit">
+          </form>
+    </div>
+    <aside>
+    </aside>
+    </div>
+    <footer>
+    <ul id="social-links">
+            
+        <li><a href="https://www.facebook.com/addictionsnu" target="_blank"><img class="social" src="./icons/facebook.svg"></a></li>
+        <li><a href="https://www.instagram.com/addictionsnu/" target="_blank"><img class="social" src="./icons/instagram.svg"></a></li>
+        <li><a href="https://twitter.com/AddictionsNu" target="_blank"><img class="social" src="./icons/twitter.svg"></a></li>
+        <li><a href="mailto:info@addictions.nu" target="_blank"><img class="social" src="./icons/minutemailer.svg"></a></li>
+    </ul>
+    </footer>
+</body>
+</html>
