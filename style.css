@@ -372,7 +372,7 @@ li {
 @media screen and (max-width: 860px) {
 
     :root {
-        --header-height: 6vh;
+        --header-height: 7vh;
         --footer-height: 6vh;
     }
 
