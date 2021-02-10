@@ -1,5 +1,5 @@
 # Addictions
-https://addictions.nu
+http://addictions1.surge.sh
 # Website about addictions.
 
 Content has been taken from Wikipedia.
